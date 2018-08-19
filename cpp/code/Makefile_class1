@@ -1,0 +1,14 @@
+TEST_NAME=class1
+TOOLCHAIN=/mnt/sdb/bin/arm_gcc/android-19-arm
+SYSROOT=${TOOLCHAIN}/sysroot
+
+CPP=${TOOLCHAIN}/bin/arm-linux-androideabi-g++
+AS=${TOOLCHAIN}/bin/arm-linux-androideabi-as
+STRIP=${TOOLCHAIN}/bin/arm-linux-androideabi-strip
+CFLAGS=-g3 --sysroot=${SYSROOT}
+
+all: ${TEST_NAME}
+${TEST_NAME}: ${TEST_NAME}.cpp
+	${CPP} ${CFLAGS} -o ${TEST_NAME}_arm ${TEST_NAME}.cpp
+hello_arm:
+	${CPP} ${CFLAGS} -S ${TEST_NAME}.cpp
