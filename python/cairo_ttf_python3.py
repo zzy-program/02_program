@@ -111,7 +111,7 @@ def create_cairo_font_face_for_file (filename, faceindex=0, loadoptions=0):
 
 if __name__ == '__main__':
     face = create_cairo_font_face_for_file("../resource/test.ttf", 0)
-    surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 600, 600)
+    surface = cairo.ImageSurface(cairo.FORMAT_A8, 600, 600)
     ctx = cairo.Context(surface)
 
     ctx.set_font_face(face)
