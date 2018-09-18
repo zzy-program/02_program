@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
 	SDL_Window *window;
 	char *font_path;
 
-	wchar_t string[] = {L"你好翡翠"}; 
+	wchar_t string[] = {L"你好"}; 
 
 	if (argc == 1) {
 		font_path = "fzlth.ttf";
