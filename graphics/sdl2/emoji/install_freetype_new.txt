@@ -1,0 +1,13 @@
+https://ywnz.com/linuxjc/2365.html
+
+
+download:
+https://download.savannah.gnu.org/releases/freetype/
+https://download.savannah.gnu.org/releases/freetype/freetype-2.9.1.tar.gz
+
+tar -zxf freetype-2.9.1.tar.gz 
+
+cd freetype-2.9.1/
+./configure --without-zlib
+make
+sudo make install
