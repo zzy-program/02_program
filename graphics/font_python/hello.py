@@ -111,7 +111,7 @@ def create_cairo_font_face_for_file (filename, faceindex=0, loadoptions=0):
 #end create_cairo_font_face_for_file
 
 if __name__ == '__main__':
-    face = create_cairo_font_face_for_file("fzlth_gb18030.ttf", 0) # ("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf", 0)
+    face = create_cairo_font_face_for_file("/usr/share/fonts/opentype/noto/NotoSansCJK-Light.ttc", 0) # ("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf", 0)
     surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 128, 128)
     ctx = cairo.Context(surface)
 
