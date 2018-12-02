@@ -4,8 +4,9 @@
 //  % export LDFLAGS=`pkg-config --libs freetype2 libpng`
 //  % clang++ -o clfontpng -static $(CXXFLAGS) clfontpng.cc $(LDFLAGS) \
 //    -licuuc -lz -lbz2
-
+// sudo apt-get install libicu-dev libpng12-dev
 // g++ -o emoji -std=c++11 -static emoji.cpp `pkg-config --cflags freetype2 libpng` `pkg-config --libs freetype2 libpng` -licuuc -lz -lbz2
+// example: ./emoji "../../../resource/NotoColorEmoji.ttf" "✌"
 #include <cassert>
 #include <cctype>
 #include <iostream>

@@ -1,5 +1,6 @@
 https://ywnz.com/linuxjc/2365.html
 
+sudo apt-get install libicu-dev libpng12-dev
 
 download:
 https://download.savannah.gnu.org/releases/freetype/
